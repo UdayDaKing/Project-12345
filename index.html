@@ -1,0 +1,48 @@
+ 
+<html>
+    <head>
+      <title>Image recognition</title>
+
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="main.js">
+    </head>
+  
+    <body>
+    <div class="container">
+      
+      <center>
+  <h3 class="btn btn-default heading">Image Recognitation</h3>
+        <br><br>
+  
+        <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+  
+        <b class="name_off_objects">
+          Backpack1
+          <hr>
+          Biscuit Book
+          <hr>
+          Binder
+          <hr>
+          StarWars
+          <hr>
+        </b>
+        <label>Webcam View - </label>
+  <div id="Camera"></div>
+        <br><br>
+  <div id="Result"></div>
+        <br><br>
+  <button onclick="take_snapshot()" class="btn btn-info">Capture Image</button>
+        <br><br>
+  <button onclick="Check()" class="btn btn-success">Identify Image</button>
+        <br><br>
+  
+        <p style="font-size: 22px;">Object : <span id="Result_object_name"></span></p>
+        <p style="font-size: 22px;">Accuracy :  <span id="Result_object_accuracy"></span></p>
+      </center>
+  
+    </div>
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
+  
